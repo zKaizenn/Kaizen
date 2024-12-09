@@ -1,0 +1,160 @@
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f8f9;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+header .logo img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #1abc9c;
+}
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Banner Styles */
+.banner {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: white;
+}
+.banner h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.banner p {
+    font-size: 1em;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.content .card, .about-us {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+.content .card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+.content .card img {
+    width: 100%;
+    height: auto;
+}
+.content .card p, .about-us p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+.about-us {
+    text-align: left; /* Texto alineado a la izquierda */
+}
+.about-us h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav {
+        margin-top: 10px;
+    }
+    .banner h1 {
+        font-size: 1.8em;
+    }
+    .banner p {
+        font-size: 0.9em;
+    }
+    .content .card, .about-us {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 1.2em;
+    }
+    .banner h1 {
+        font-size: 1.5em;
+    }
+}
